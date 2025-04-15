@@ -1,0 +1,8 @@
+1. 
+
+2. 268 MISSNING.PY
+    https://leetcode.com/problems/missing-number/submissions/1542981222/
+
+
+3. 389 .FIND THE DIFFERENCE 
+    https://leetcode.com/problems/find-the-difference/
