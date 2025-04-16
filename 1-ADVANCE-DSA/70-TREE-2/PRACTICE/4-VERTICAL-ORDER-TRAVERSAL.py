@@ -22,8 +22,10 @@ class Solution:
                 if(node.right is not None):
                     queue.append((node.right,hd+1,depth+1))
         result=[]
-        for key in sorted(ans.keys()):
-            ans[key].sort()
-            # sort by node value and depth if both are same mean ans[key] which is hd and depth then value should be prioritise
-            result.append([val for i,val in ans[key]])
+        # sorted by hd
+         result = []
+        for key in sorted(column_map.keys()):  # 🔹 STEP 2: sort horizontal distances (left to right)
+            column_map[key].sort()             # 🔸 STEP 3: sort each list by (depth, value)
+            result.append([val for _, val in column_map[key]])  # Extract values only
+
         return result
