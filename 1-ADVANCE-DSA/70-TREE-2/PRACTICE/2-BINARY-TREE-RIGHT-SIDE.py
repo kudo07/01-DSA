@@ -1,4 +1,6 @@
-def levelOrder(self, root):
+#first element of every level of the matrix
+
+def levelOrder(self,root):
     if(not root):
         return []
     queue=[]
@@ -8,7 +10,7 @@ def levelOrder(self, root):
     while(len(queue)>0):
         level=[]
         size=len(queue)
-        for i in range(size)
+        for _ in range(size):
             temp=queue.pop(0)
             if(temp.left is not None):
                 queue.append(temp.left)
