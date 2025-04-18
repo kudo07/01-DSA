@@ -118,3 +118,11 @@ class Solution:
             # sort by node value and depth if both are same mean ans[key] which is hd and depthe then value should be prioritiese
             result.append([val for i,val in ans[key]])
         return result
+
+
+root = TreeNode(1)
+root.left = TreeNode(2, TreeNode(4), TreeNode(5, TreeNode(10)))
+root.right = TreeNode(3, TreeNode(6), TreeNode(7, None, TreeNode(8)))
+
+sol = Solution()
+print(sol.verticalTraversal(root))
