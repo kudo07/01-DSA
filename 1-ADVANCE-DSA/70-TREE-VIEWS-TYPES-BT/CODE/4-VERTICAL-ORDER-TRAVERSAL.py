@@ -84,7 +84,10 @@
 #             # apply sort in the tupple (depth,root.val) for making the correct order
 #             result=[val for i, val in ans[key]]
 #         return result
+# Vertical Distance (dist) (Leftmost first)
 
+# Depth (Level Order) (Topmost first)
+# Value Order (Smaller values first if same depth & distance)
 from typing import Optional, List
 from collections import defaultdict, deque
 

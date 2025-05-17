@@ -15,5 +15,5 @@ def levelOrder(self, root):
             if(temp.right is not None):
                 queue.append(temp.right)
         if(queue):
-            ans.append(queue[-1].val)
+            ans.append(queue[0].val)
     return ans
